@@ -1,0 +1,241 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+body {
+  font-family: "Arial";
+  font-size: 16px;
+  background-color: #e6e5e5;
+}
+body.lock {
+  overflow: hidden;
+}
+
+input {
+  padding: 7px;
+}
+
+.container {
+  max-width: 360px;
+  margin: 0 auto;
+  padding: 15px 0;
+}
+
+.wrapper {
+  padding: 35px;
+  background-color: #fff;
+  border-radius: 30px;
+  border: 1px solid #00b7ff;
+}
+
+.film-title {
+  margin: 0 0 24px;
+  text-align: center;
+  font-size: 32px;
+}
+
+.film-add-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.film-add-wrapper:not(:last-child) {
+  margin: 0 0 32px;
+}
+
+.btn {
+  cursor: pointer;
+  margin: 0 0 0 16px;
+  border: 1px solid #00b7ff;
+  border-radius: 5px;
+  padding: 7px;
+  transition: 0.2s;
+}
+.btn:hover {
+  background-color: #00b7ff;
+  color: #fff;
+}
+
+.btn-red {
+  margin: 16px 0 0;
+  text-align: center;
+  border-color: #ce0000;
+}
+.btn-red:hover {
+  background-color: #ce0000;
+  color: #fff;
+}
+
+.film-find {
+  width: 100%;
+  margin: 0 0 12px;
+}
+
+.film-find-none {
+  text-align: center;
+  border: 1px solid grey;
+  color: rgba(128, 128, 128, 0.8);
+  border-radius: 3px;
+  display: none;
+}
+.film-find-none.film-find-show {
+  display: block;
+}
+
+.film-list {
+  padding: 0;
+}
+
+.film-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.film-item:not(:last-child) {
+  margin: 0 0 8px;
+}
+
+.author {
+  font-size: 8px;
+  text-align: center;
+  margin: 12px 0 -20px 0;
+}
+
+.modal-delete-all {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: 0.4s;
+}
+.modal-delete-all.modal-open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-delete-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.modal-delete-content {
+  border: 2px solid #ce0000;
+  border-radius: 20px;
+  background-color: #e6e5e5;
+  padding: 50px 30px;
+  text-align: center;
+}
+
+.modal-delete-text {
+  font-size: 24px;
+  margin: 0 0 24px;
+}
+
+.modal-delete-btn-wrapper {
+  display: flex;
+  gap: 20px;
+}
+
+.modal-delete-btn {
+  margin: 0;
+}
+
+.btn-red-full {
+  border-color: #ce0000;
+  background-color: #ce0000;
+  color: #fff;
+}
+.btn-red-full:hover {
+  background-color: #ff0000;
+}
+
+.hide {
+  display: none;
+}/*# sourceMappingURL=style.css.map */

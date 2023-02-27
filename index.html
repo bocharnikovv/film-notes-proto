@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Film Notes</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="wrapper">
+      <h1 class="film-title">Film Notes</h1>
+      <div class="film-add-wrapper">
+        <input type="text" class="film-add" placeholder="Film name to add">
+        <div class="film-add-btn btn">add film</div>
+      </div>
+      <input type="text" class="film-find" placeholder="Film name to find">
+      <div class="film-find-none" id="noFilm">no films</div>
+      <div class="film-find-none" id="noFilmFound">no films found</div>
+      <ol class="film-list">
+      </ol>
+      <div class="film-delete-all btn btn-red">delete all</div>
+      <h5 class="author">by Ivan Bocharnikov</h5>
+    </div>
+  </div>
+
+  <div class="modal-delete-all">
+    <div class="modal-delete-body">
+      <div class="modal-delete-content">
+        <p class="modal-delete-text">Are you sure?</p>
+        <div class="modal-delete-btn-wrapper">
+          <div class="modal-delete-btn btn btn-red-full" id="delAll">yes, delete all films</div>
+          <div class="modal-delete-btn btn" id="delNo">no, exit</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
